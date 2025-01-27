@@ -86,83 +86,14 @@ La estructura principal del proyecto es la siguiente:
 - **Desarrollo**:
 
   ```bash
-  npm start
+  npm start o ionic serve
   ```
-
-  Inicia el servidor de desarrollo.
-
-- **Construcción para producción**:
-
-  ```bash
-  npm run build
-  ```
-
-  Genera los archivos optimizados para producción.
-
-- **Linting**:
-
-  ```bash
-  npm run lint
-  ```
-
-  Analiza el código para encontrar errores o problemas de estilo.
-
-- **Pruebas**:
-
-  - Unitarias:
-    ```bash
-    npm run test
-    ```
-  - E2E:
-    ```bash
-    npm run e2e
-    ```
 
 ---
 
 ## Herramientas y Tecnologías
 
-- **Angular 17**: Framework para la construcción de aplicaciones SPA.
-- **Ionic 7**: Biblioteca de componentes y herramientas para crear aplicaciones móviles.
-- **Capacitor**: Herramienta para la ejecución en dispositivos móviles.
-- **SCSS**: Preprocesador CSS para la gestión de estilos.
-- **Jasmine/Karma**: Framework para pruebas unitarias.
-- **Protractor/Cypress**: Herramientas para pruebas end-to-end (E2E).
+- **Angular 19**
+- **Ionic 8**
 
----
-
-## Contribución
-
-Si deseas contribuir a este proyecto:
-
-1. Realiza un fork del repositorio.
-2. Crea una rama nueva para tu funcionalidad o corrección de errores:
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
-   ```
-3. Realiza los cambios necesarios y haz un commit:
-   ```bash
-   git commit -m "Agrega nueva funcionalidad"
-   ```
-4. Envía un pull request a la rama principal del repositorio.
-
----
-
-## Licencia
-
-Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
-
----
-
-## Contacto
-
-Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto:
-
-- **Autor**: [Tu Nombre]
-- **Email**: [tuemail@correo.com](mailto\:tuemail@correo.com)
-- **LinkedIn**: [Tu Perfil de LinkedIn](https://linkedin.com/in/tuperfil)
-
----
-
-¡Gracias por usar esta aplicación! ✨
 
