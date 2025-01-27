@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Esta aplicación es un proyecto desarrollado con **Angular 17** y **Ionic 7**
+Esta aplicación es un proyecto desarrollado con **Angular 19** y **Ionic 8**
 
 ---
 
