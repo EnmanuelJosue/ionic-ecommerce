@@ -1,4 +1,4 @@
-# Aplicación Angular 17 + Ionic 7
+# Aplicación Angular 19 + Ionic 8
 
 ## Descripción
 
