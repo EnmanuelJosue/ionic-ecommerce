@@ -1,0 +1,50 @@
+<ion-card
+  class="ion-no-padding"
+  [class]="configWidth() ? 'card-width' : ''"
+
+  >
+  <img
+    [alt]="cardItem().description"
+    [src]="cardItem().image" />
+  <ion-card-header >
+    <ion-card-title>
+      {{ cardItem().title }}
+    </ion-card-title>
+
+  </ion-card-header>
+  <ion-card-content >
+    <div>
+      <div>
+        Price: {{ cardItem().price | currency }}
+      </div>
+      @if (_cartService.getItemQuantityById(cardItem().id) && showQuantity()) {
+        <div>
+          Qty: {{ _cartService.getItemQuantityById(cardItem().id) }}
+        </div>
+        <div>
+          Total: {{ _cartService.getItemQuantityById(cardItem().id) * cardItem().price | currency }}
+        </div>
+
+      }
+    </div>
+
+
+    <div>
+      @if (_cartService.getItemQuantityById(cardItem().id)) {
+        <ion-icon
+          color="primary"
+          name="remove-outline"
+          (click)="removeFromCart(cardItem())"
+        >
+        </ion-icon>
+      }
+
+      <ion-icon
+        color="primary"
+        name="add-outline"
+        (click)="addToCart(cardItem())"
+        >
+      </ion-icon>
+    </div>
+  </ion-card-content>
+</ion-card>

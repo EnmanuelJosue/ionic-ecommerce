@@ -1,0 +1,23 @@
+ion-card-content{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  ion-icon{
+    font-size: 25px;
+  }
+}
+
+ion-card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 65%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.card-width{
+  max-width: 180px;
+}
+ion-card-title{
+  font-size: 14px;
+}

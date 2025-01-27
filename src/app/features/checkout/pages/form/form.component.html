@@ -1,0 +1,117 @@
+<ion-content>
+  <ion-grid>
+    <form [formGroup]="form">
+      <ion-row>
+        <ion-col size="12">
+          <ion-text color="primary">
+            <h1>Address Details</h1>
+          </ion-text>
+
+          <ion-list class="ion-padding ">
+              <ion-input
+                label="Zip code"
+                fill="outline"
+                label-placement="floating"
+                placeholder="Enter zip code"
+                formControlName="zipCode"
+                [errorText]="getFieldError('zipCode')"
+                >
+              </ion-input>
+              <ion-input
+                class="ion-margin-top"
+                label="Address"
+                fill="outline"
+                label-placement="floating"
+                placeholder="Enter address"
+                formControlName="address"
+                [errorText]="getFieldError('address')"
+                >
+              </ion-input>
+              <ion-input
+                class="ion-margin-top"
+                label="City"
+                fill="outline"
+                label-placement="floating"
+                placeholder="Enter city"
+                formControlName="city"
+                [errorText]="getFieldError('city')"
+                >
+              </ion-input>
+              <ion-input
+                class="ion-margin-top"
+                label="Country"
+                fill="outline"
+                label-placement="floating"
+                placeholder="Enter country"
+                formControlName="country"
+                [errorText]="getFieldError('country')"
+                >
+              </ion-input>
+          </ion-list>
+        </ion-col>
+
+        <ion-col size="12">
+          <ion-text color="primary">
+            <h1>Bank Account Details</h1>
+          </ion-text>
+
+          <ion-list class="ion-padding ">
+              <ion-input
+                label="Bank Account Number"
+                fill="outline"
+                label-placement="floating"
+                placeholder="Enter bank account number"
+                formControlName="bankAccountNumber"
+                [errorText]="getFieldError('bankAccountNumber')"
+                >
+              </ion-input>
+              <ion-input
+                class="ion-margin-top"
+                label="Account Holder’s Name"
+                fill="outline"
+                label-placement="floating"
+                placeholder="Enter acccount holder’s name"
+                formControlName="accountHolderName"
+                [errorText]="getFieldError('accountHolderName')"
+                >
+              </ion-input>
+              <ion-input
+                class="ion-margin-top"
+                label="IFSC Code"
+                fill="outline"
+                label-placement="floating"
+                placeholder="IFSC Code"
+                formControlName="ifscCode"
+                [errorText]="getFieldError('ifscCode')"
+                >
+              </ion-input>
+          </ion-list>
+        </ion-col>
+
+
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="3">
+          <ion-button
+            fill="outline"
+            type="secondary"
+            expand="block"
+            routerLink="/home/cart"
+            >
+            Back
+          </ion-button>
+        </ion-col>
+        <ion-col size="9">
+          <ion-button
+            expand="block"
+            (click)="handlePayment()"
+            >
+            Pay {{ cartService.getTotalPrice() | currency }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+
+</ion-content>

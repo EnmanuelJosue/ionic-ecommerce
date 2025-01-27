@@ -1,0 +1,13 @@
+<ion-content class="ion-padding">
+  <div class="card-container">
+    @for (card of cardItems(); track card.id) {
+      <app-card
+        [cardItem]="card"
+        [configWidth]="true"
+      >
+      </app-card>
+
+    }
+  </div>
+
+</ion-content>

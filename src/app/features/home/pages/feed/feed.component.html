@@ -1,0 +1,31 @@
+<ion-content class="ion-padding">
+
+  <div>
+    Categories:
+    <br>
+
+    @for (category of categories(); track category) {
+      <ion-chip
+        [class]="selectedCategory() === category ? 'selected' : ''"
+        (click)="selectCategory(category)"
+      >
+        <ion-label>{{ category }}</ion-label>
+      </ion-chip>
+
+    }
+  </div>
+
+  <div class="card-container">
+    @for (card of cardItems(); track card.id) {
+      <app-card
+        [cardItem]="card"
+        [configWidth]="true"
+      >
+
+      </app-card>
+
+    }
+  </div>
+
+
+</ion-content>

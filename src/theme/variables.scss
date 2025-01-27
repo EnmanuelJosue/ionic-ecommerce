@@ -1,0 +1,124 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+
+:root {
+  --ion-font-family: 'Helvetica Neue', Arial, sans-serif;
+
+	--ion-color-primary: #111111;
+	--ion-color-primary-rgb: 17,17,17;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 255,255,255;
+	--ion-color-primary-shade: #0f0f0f;
+	--ion-color-primary-tint: #292929;
+
+	--ion-color-secondary: #757575;
+	--ion-color-secondary-rgb: 117,117,117;
+	--ion-color-secondary-contrast: #ffffff;
+	--ion-color-secondary-contrast-rgb: 255,255,255;
+	--ion-color-secondary-shade: #676767;
+	--ion-color-secondary-tint: #838383;
+
+	--ion-color-tertiary: #FFFFFF;
+	--ion-color-tertiary-rgb: 255,255,255;
+	--ion-color-tertiary-contrast: #000000;
+	--ion-color-tertiary-contrast-rgb: 0,0,0;
+	--ion-color-tertiary-shade: #e0e0e0;
+	--ion-color-tertiary-tint: #ffffff;
+
+	--ion-color-success: #F5F5F5;
+	--ion-color-success-rgb: 245,245,245;
+	--ion-color-success-contrast: #000000;
+	--ion-color-success-contrast-rgb: 0,0,0;
+	--ion-color-success-shade: #d8d8d8;
+	--ion-color-success-tint: #f6f6f6;
+
+	--ion-color-warning: #CCCCCC;
+	--ion-color-warning-rgb: 204,204,204;
+	--ion-color-warning-contrast: #000000;
+	--ion-color-warning-contrast-rgb: 0,0,0;
+	--ion-color-warning-shade: #b4b4b4;
+	--ion-color-warning-tint: #d1d1d1;
+
+	--ion-color-danger: #c5000f;
+	--ion-color-danger-rgb: 197,0,15;
+	--ion-color-danger-contrast: #ffffff;
+	--ion-color-danger-contrast-rgb: 255,255,255;
+	--ion-color-danger-shade: #ad000d;
+	--ion-color-danger-tint: #cb1a27;
+
+	--ion-color-light: #E5E5E5;
+	--ion-color-light-rgb: 229,229,229;
+	--ion-color-light-contrast: #000000;
+	--ion-color-light-contrast-rgb: 0,0,0;
+	--ion-color-light-shade: #cacaca;
+	--ion-color-light-tint: #e8e8e8;
+
+	--ion-color-medium: #5f5f5f;
+	--ion-color-medium-rgb: 95,95,95;
+	--ion-color-medium-contrast: #ffffff;
+	--ion-color-medium-contrast-rgb: 255,255,255;
+	--ion-color-medium-shade: #545454;
+	--ion-color-medium-tint: #6f6f6f;
+
+	--ion-color-dark: #2f2f2f;
+	--ion-color-dark-rgb: 47,47,47;
+	--ion-color-dark-contrast: #ffffff;
+	--ion-color-dark-contrast-rgb: 255,255,255;
+	--ion-color-dark-shade: #292929;
+	--ion-color-dark-tint: #444444;
+
+}
+
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/helvetica-255/Helvetica.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/helvetica-255/Helvetica-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/helvetica-255/Helvetica-BoldOblique.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/helvetica-255/helvetica-light-587ebe5a59211.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/helvetica-255/Helvetica-Oblique.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/helvetica-255/helvetica-compressed-5871d14b6903a.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/helvetica-255/helvetica-rounded-bold-5871d05ead8de.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+ion-button {
+  text-transform: none;
+}
